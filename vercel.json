@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "name": "laxman-motors-api",
   "builds": [
     {
       "src": "api/index.js",
@@ -16,13 +17,4 @@
       "dest": "/api/index.js"
     }
   ],
-  "env": {
-    "AIRTABLE_API_KEY": "@airtable_api_key",
-    "AIRTABLE_BASE_ID": "@airtable_base_id",
-    "PING4SMS_API_KEY": "@ping4sms_api_key",
-    "PING4SMS_USERNAME": "@ping4sms_username",
-    "PING4SMS_SENDER_ID": "@ping4sms_sender_id",
-    "OWNER_WHATSAPP": "@owner_whatsapp",
-    "OWNER_EMAIL": "@owner_email"
-  }
 }
