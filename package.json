@@ -4,7 +4,7 @@
   "description": "Laxman Motors - Royal Enfield Service Centre Backend API",
   "main": "api/index.js",
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "scripts": {
     "dev": "vercel dev",
