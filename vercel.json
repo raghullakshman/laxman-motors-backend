@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.js"
+    }
+  ],
+  "env": {
+    "AIRTABLE_API_KEY": "@airtable_api_key",
+    "AIRTABLE_BASE_ID": "@airtable_base_id",
+    "PING4SMS_API_KEY": "@ping4sms_api_key",
+    "PING4SMS_USERNAME": "@ping4sms_username",
+    "PING4SMS_SENDER_ID": "@ping4sms_sender_id",
+    "OWNER_WHATSAPP": "@owner_whatsapp",
+    "OWNER_EMAIL": "@owner_email"
+  }
+}
